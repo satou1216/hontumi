@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7377221050921555315}
   - component: {fileID: 7377221050921555314}
   - component: {fileID: 3987944177964705854}
-  - component: {fileID: -5316106532038814703}
+  - component: {fileID: 6195761797995702158}
   m_Layer: 0
   m_Name: Bird 1
   m_TagString: Untagged
@@ -180,8 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   direction: 1
---- !u!61 &-5316106532038814703
-BoxCollider2D:
+--- !u!70 &6195761797995702158
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -194,15 +194,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Direction: 0
