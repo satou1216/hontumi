@@ -8,16 +8,21 @@ public class DeadLine : MonoBehaviour
     public float y=0.1f;
 
     //Detection maxY;
-    [SerializeField]
-    GameObject g;
+    //[SerializeField]
+    //GameObject g;
 
     [SerializeField]
     Text t;
+    [SerializeField]
+    GameObject fall;
+
+    public float Y=0;
 
     // Start is called before the first frame update
     void Start()
     {
-       // maxY = g.GetComponent<Detection>();
+        // maxY = g.GetComponent<Detection>();
+        
     }
 
     // Update is called once per frame
@@ -25,11 +30,12 @@ public class DeadLine : MonoBehaviour
     {
 
         this.transform.position += new Vector3(0, y*Time.deltaTime, 0);
-        t.text = Detection.bestY.ToString("f2");
+        t.text = Y.ToString("f2");
 
-        if (this.transform.position.y >= Detection.bestY)
+        if (this.transform.position.y >= Y)
         {
-            Debug.Log("gameover");
+            //Debug.Log("gameover");
+            fall.GetComponent<Fall>().end();
         }
 
     }
