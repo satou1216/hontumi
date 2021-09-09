@@ -2,20 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class CursorManager : MonoBehaviour
+public class CursorManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    
-    // Start is called before the first frame update
-    void Start()
+    public Texture2D handCursor;
+
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        Cursor.visible = false;
+        Cursor.SetCursor(handCursor, new Vector2(handCursor.width / 2, handCursor.height / 2), CursorMode.Auto);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPointerExit(PointerEventData eventData)
     {
-
-        this.gameObject.transform.position = Input.mousePosition;
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 }
