@@ -34,12 +34,15 @@ public class Fall : MonoBehaviour
 
     public void title()
     {
+        Detection.bestY = 0;
         SceneManager.LoadScene("Title");
     }
 
     public void game()
     {
+        Detection.bestY = 0;
         SceneManager.LoadScene("MainGame");
+        Time.timeScale = 1;
     }
 
 }
