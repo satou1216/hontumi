@@ -5,14 +5,14 @@ using UnityEngine;
 public class Appe : MonoBehaviour
 {
     [SerializeField]
-    GameObject book, shadow;
+    GameObject book, shadow,came;
 
     GameObject sha;
     bool set;
     float x, y;
-    Vector3 mousevec;
+    Vector3 mousevec,vec;
 
-   
+
     void Start()
     {
         mousevec = Input.mousePosition;
@@ -31,22 +31,24 @@ public class Appe : MonoBehaviour
         }
 
         mousevec = Input.mousePosition;
-        sha.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4 + Screen.height / 2, 10f)); ;
+      vec=  Camera.main.ScreenToWorldPoint(mousevec);
+
+        sha.transform.position = new Vector3(vec.x+x,Detection.bestY+3 , 10f); ;
 
         if (Input.GetMouseButtonDown(0))
         {
             Destroy(sha);
             //mousevec.z = 10.0f;
-            Instantiate(book, Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4 + Screen.height / 2, 10f)), Quaternion.identity);
+            Instantiate(book, new Vector3(vec.x+x, Detection.bestY + 3, 10f), Quaternion.identity);
 
             set = false;
-            sha = Instantiate(shadow, Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4 + Screen.height / 2, 10f)), Quaternion.identity);
+            sha = Instantiate(shadow, new Vector3(vec.x+x, Detection.bestY + 3, 10f), Quaternion.identity);
         }
     }
 
     public void a()
     {
-        x += Random.Range(-30f, 30f);
+        x += Random.Range(-1f, 1f);
         //y += Random.Range(-20f, 20f);
     }
 
