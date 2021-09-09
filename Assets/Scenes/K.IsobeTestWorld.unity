@@ -201,7 +201,6 @@ GameObject:
   - component: {fileID: 519615342}
   - component: {fileID: 519615341}
   - component: {fileID: 519615340}
-  - component: {fileID: 519615343}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -316,35 +315,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519615338}
   m_CullTransparentMesh: 1
---- !u!114 &519615343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519615338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11500000, guid: 90745c5a896a37244ac38484acab2c35, type: 3}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &601796477
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,12 +493,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _positionStep: 2
-  _mouseSensitive: 90
   zoomSpeed: 1
   cameraScroll: 1
   highest_tower: 50
   seekbar: {fileID: 519615340}
-  checkscroll: 0
 --- !u!114 &713181960
 MonoBehaviour:
   m_ObjectHideFlags: 0

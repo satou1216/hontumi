@@ -18,10 +18,6 @@ public class CameraControll : MonoBehaviour
     [SerializeField, Range(0.1f, 10.0f)]
     private float _positionStep = 2.0f;
 
-    //マウス感度
-    [SerializeField, Range(30.0f, 150.0f)]
-    private float _mouseSensitive = 90.0f;
-
     //ホイール感度
     [SerializeField, Range(0.10f, 10.0f)]
     private float zoomSpeed = 1.0f;
@@ -49,10 +45,10 @@ public class CameraControll : MonoBehaviour
 
     [SerializeField]
     private Scrollbar seekbar;
-    GameObject scrollbar;
 
     private Vector3 velocity;
-    public bool checkscroll;
+
+    bool checkscroll;
 
     void Start()
     {
@@ -137,10 +133,37 @@ public class CameraControll : MonoBehaviour
     //スクロールバーの操作
     void scrollbarMove()
     {
-        
+        Vector3 position = Input.mousePosition;
+        position.z = 10f;
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            var length = Vector3.Distance(new Vector3(seekbar.transform.position.x, 0, 0), new Vector3(position.x, 0, 0));
+            if (length < 10f)
+            {
+                //Debug.Log("1");
+                checkscroll = true;
+
+
+            }
+            else
+            {
+                checkscroll = false;
+            }
+
+
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            checkscroll = false;
+        }
         if (checkscroll)
         {
-            _camTransform.position = new Vector3(0, seekbar.value * highest_tower, -10);
+            velocity = new Vector3(0, seekbar.value * highest_tower, -10);
+            float camerasize = _camera.orthographicSize - cameraScroll;
+            camerasize = Mathf.Clamp(camerasize, 5f, highest_tower / 2 + 5);
+            float ize = camerasize;
+            velocity.y = Mathf.Clamp(velocity.y, -5 + ize, highest_tower - ize + 5);
             _camTransform.position = velocity;
         }
         else
