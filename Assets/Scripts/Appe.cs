@@ -5,18 +5,18 @@ using UnityEngine;
 public class Appe : MonoBehaviour
 {
     [SerializeField]
-    GameObject book,shadow;
+    GameObject book, shadow;
 
     GameObject sha;
     bool set;
-    float x,y;
+    float x, y;
     Vector3 mousevec;
 
-    // Start is called before the first frame update
+   
     void Start()
     {
         mousevec = Input.mousePosition;
-       sha= Instantiate(shadow, Vector3.zero, Quaternion.identity);
+        sha = Instantiate(shadow, Vector3.zero, Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -29,16 +29,18 @@ public class Appe : MonoBehaviour
             a();
             set = true;
         }
+
         mousevec = Input.mousePosition;
-        sha.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x+x,Screen.height/4 + Screen.height/2, 10f)); ;
+        sha.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4 + Screen.height / 2, 10f)); ;
 
         if (Input.GetMouseButtonDown(0))
         {
             Destroy(sha);
             //mousevec.z = 10.0f;
-            Instantiate(book, Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4+Screen.height/2, 10f)), Quaternion.identity);
+            Instantiate(book, Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4 + Screen.height / 2, 10f)), Quaternion.identity);
+
             set = false;
-            sha = Instantiate(shadow, Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4 + Screen.height/2, 10f)), Quaternion.identity);
+            sha = Instantiate(shadow, Camera.main.ScreenToWorldPoint(new Vector3(mousevec.x + x, Screen.height / 4 + Screen.height / 2, 10f)), Quaternion.identity);
         }
     }
 
