@@ -66,11 +66,17 @@ public class CameraControll : MonoBehaviour
         //CamControlIsActive(); //カメラ操作の有効無効
 
         
-            //ResetCameraRotation(); //回転角度のみリセット
-            //CameraRotationMouseControl(); //カメラの回転 マウス
-            CameraSlideMouseControl(); //カメラの縦横移動 マウス
-            CameraZoom();//カメラのズーム マウス
-            scrollbarMove();//スクロールバーの操作
+        //ResetCameraRotation(); //回転角度のみリセット
+        //CameraRotationMouseControl(); //カメラの回転 マウス
+        CameraSlideMouseControl(); //カメラの縦横移動 マウス
+        CameraZoom();//カメラのズーム マウス
+        scrollbarMove();//スクロールバーの操作
+        if(highest_tower != Detection.bestY)
+        {
+            velocity = new Vector3(velocity.x, velocity.y + Detection.bestY - highest_tower, velocity.z);
+            _camTransform.position = velocity;
+            highest_tower = Detection.bestY;
+        }
             //CameraPositionKeyControl(); //カメラのローカル移動 キー
         
     }
