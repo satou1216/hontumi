@@ -568,9 +568,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1850850994}
     m_Modifications:
+    - target: {fileID: 4031346863459263057, guid: 37178b213d265194abd904c1e6fb480e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4031346863459263058, guid: 37178b213d265194abd904c1e6fb480e, type: 3}
       propertyPath: m_Name
       value: Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031346863459263058, guid: 37178b213d265194abd904c1e6fb480e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4031346863459263059, guid: 37178b213d265194abd904c1e6fb480e, type: 3}
       propertyPath: m_Pivot.x
@@ -1244,7 +1252,7 @@ Transform:
   m_GameObject: {fileID: 1054819776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -3.84, z: -1}
-  m_LocalScale: {x: 10, y: 0.3, z: 1}
+  m_LocalScale: {x: 31.34, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1262,8 +1270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   y: 0.5
-  g: {fileID: 245601436651083908, guid: 4be70f4a4b1342748bb1f0e62751e6f1, type: 3}
   t: {fileID: 320673984}
+  fall: {fileID: 966721834}
+  Y: 0
 --- !u!1 &1068458765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,7 +1734,7 @@ Transform:
   m_GameObject: {fileID: 1305333139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.85, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

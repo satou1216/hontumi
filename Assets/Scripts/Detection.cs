@@ -7,7 +7,8 @@ public class Detection : MonoBehaviour
   static public  float bestY = 0;
     float height;
 
-    
+    //[SerializeField]
+    //GameObject dodai;
 
     List<GameObject> bookList = new List<GameObject>();
 
@@ -17,6 +18,7 @@ public class Detection : MonoBehaviour
     void Start()
     {
         height = gameObject.GetComponent<SpriteRenderer>().bounds.size.y;
+        dead = GameObject.Find("Deadline").GetComponent<DeadLine>();
         //bookList.Add(dodai);
         //dead = GameObject.Find("Deadline").GetComponent<DeadLine>();
     }
@@ -42,6 +44,11 @@ public class Detection : MonoBehaviour
             //dead.addconp(bookList[bookList.Count-1]);
             bookList.Add(collision.gameObject);
             bestY = bookList[bookList.Count-1].gameObject.transform.position.y + height;
+
+            if (bookList[bookList.Count - 1].gameObject.transform.position.y>= bookList[bookList.Count - 1].gameObject.transform.position.y-0.1) {
+                bookList[bookList.Count - 1].gameObject.tag = "Untagged";
+            }
+            dead.Y = bestY;
             // Debug.Log(bestY.ToString("f2"));
 
             if (bookList.Count != 1)
