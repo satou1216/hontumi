@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 921047110}
   m_Layer: 0
   m_Name: dodai
-  m_TagString: book
+  m_TagString: top
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
