@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fall : MonoBehaviour
 {
+    [SerializeField]
+    GameObject g;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +19,27 @@ public class Fall : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if (collision.gameObject.tag == "book")
+        {
+            //‰¹
+            g.SetActive(true);
+            Time.timeScale = 0;
+
+        }
+
+    }
+
+    public void title()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
+    public void game()
+    {
+        SceneManager.LoadScene("MainGame");
+    }
+
 }
