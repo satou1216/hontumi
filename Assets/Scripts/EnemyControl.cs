@@ -8,7 +8,6 @@ public class EnemyControl : MonoBehaviour
     bool vertical;
     //public float changeTime = 3.0f;
 
-
     new Rigidbody2D rigidbody2D;
     float timer;
     public int direction = 1;
@@ -46,5 +45,9 @@ public class EnemyControl : MonoBehaviour
             position.x = position.x + Time.deltaTime * speed * direction; 
         }
         rigidbody2D.MovePosition(position);
+    }
+    public void stop()
+    {
+        speed = 0;
     }
 }

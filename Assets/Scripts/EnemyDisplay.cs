@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class EnemyDisplay : MonoBehaviour
 {
-    public GameObject stage;
-    Vector2 screen;
-    Vector2 posA;
-    float dis;
+    
+    public float randamMin;
+    public float randamMax;
+    public float x;
+    public GameObject target;
     // Start is called before the first frame update
-    void Start()
-    {
-        posA = stage.transform.position;
-        screen = new Vector2(Screen.width / 2, Screen.height / 2);
-        dis = Vector3.Distance(screen, posA);
-    }
+
 
     // Update is called once per frame
     void Update()
     {
-
-        if (dis == 100)
+        if (Input.GetKeyUp(KeyCode.Space))
         {
-            this.gameObject.SetActive(true);
+            if (target != null)
+            {
+                //Instantiate( 生成するオブジェクト,  場所, 回転 );  回転はそのままなら↓
+                Instantiate(target, new Vector2(x, Random.Range(randamMin, randamMax)), Quaternion.identity);
+            }
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDelete : MonoBehaviour
 {
 
-
+    //EnemyControl EC;
      GameObject enemy;
 
     // Start is called before the first frame update
@@ -31,6 +31,7 @@ public class EnemyDelete : MonoBehaviour
             {
                 //このwhiteはコライダーのGameObjectとしての値を取得
                 this.enemy = collider.transform.gameObject;
+                //EC.stop();
                 Destroy(this.enemy);
                 
             }
