@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cursor
+  - book
+  - top
+  - Wall
+  - Enemy
   layers:
   - Default
   - TransparentFX
