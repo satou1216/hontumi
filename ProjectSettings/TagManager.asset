@@ -7,6 +7,8 @@ TagManager:
   - Cursor
   - book
   - top
+  - Wall
+  - Enemy
   layers:
   - Default
   - TransparentFX

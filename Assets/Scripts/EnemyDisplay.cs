@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class EnemyDisplay : MonoBehaviour
 {
-    
     public float randamMin;
     public float randamMax;
     public float x;
+    float seconds;
     public GameObject target;
     // Start is called before the first frame update
 
@@ -15,13 +15,18 @@ public class EnemyDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
+        seconds += Time.deltaTime;
+        //十秒ごとに敵生成
+        if (seconds >= 10)
+        { 
             if (target != null)
             {
-                //Instantiate( 生成するオブジェクト,  場所, 回転 );  回転はそのままなら↓
+                //敵の生成
                 Instantiate(target, new Vector2(x, Random.Range(randamMin, randamMax)), Quaternion.identity);
             }
+            //秒数リセット
+            seconds = 0;
         }
     }
+
 }
