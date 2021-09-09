@@ -17,7 +17,7 @@ public class EnemyDisplay : MonoBehaviour
     {
         seconds += Time.deltaTime;
         //\•b‚²‚Æ‚É“G¶¬
-        if (seconds >= 10)
+        if (seconds >= 20)
         { 
             if (target != null)
             {

@@ -16,7 +16,6 @@ public class EnemyControl : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        
     }
 
     void Update()
@@ -44,5 +43,4 @@ public class EnemyControl : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }
