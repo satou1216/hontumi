@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4320455616802826294}
   - component: {fileID: 1758374088319660961}
   - component: {fileID: -733582561820661204}
-  - component: {fileID: -4086731995751277420}
+  - component: {fileID: 1744712906140215350}
   m_Layer: 0
   m_Name: Baseball
   m_TagString: Untagged
@@ -147,8 +147,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &-4086731995751277420
-BoxCollider2D:
+--- !u!70 &1744712906140215350
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -161,15 +161,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Direction: 0
