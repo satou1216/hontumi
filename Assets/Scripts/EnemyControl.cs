@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
-    public float speed;
+    public float speed=1;
     bool vertical;
     //public float changeTime = 3.0f;
 
     new Rigidbody2D rigidbody2D;
-    float timer;
     public int direction = 1;
 
 
@@ -17,21 +16,11 @@ public class EnemyControl : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        //timer = changeTime;
-
+        
     }
 
     void Update()
     {
-
-        //timer -= Time.deltaTime;
-
-        if (timer < 0)
-        {
-            //”½“]
-            direction = -direction;
-            //timer = changeTime;
-        }
 
     }
 
@@ -45,9 +34,15 @@ public class EnemyControl : MonoBehaviour
             position.x = position.x + Time.deltaTime * speed * direction; 
         }
         rigidbody2D.MovePosition(position);
+
     }
-    public void stop()
+    //“G‚Ì‰æ–ÊŠOÁ‹Ž
+    void OnTriggerEnter2D(Collider2D col)
     {
-        speed = 0;
+        if (col.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
+
 }
