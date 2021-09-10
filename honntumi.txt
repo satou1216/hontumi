@@ -1,0 +1,23 @@
+ほんつみ　説明書
+
+■このゲームについて
+本を積んでタワーを作っていき鳥やボールがディフェンスしていくゲームです
+
+■基本操作(デフォルト)
+[マウス]
+左クリック：本をつみあげる
+ホイール：画面拡大、縮小
+右クリック押したままスライド：画面上下スライド
+
+■謝辞
+この作品の制作には、素材を使用させていただきました。
+
+○BGM・効果音素材
+・ニコニ・コモンズ様：https://commons.nicovideo.jp/material/nc60788
+・効果音ラボ様：https://soundeffect-lab.info/sound/search.php?s=%E3%83%91%E3%83%B3%E3%83%81
+・無料効果音で遊ぼう！様：https://taira-komori.jpn.org/daily01.html
+・DOVA-SYNDROME様：https://dova-s.jp/bgm/play2886.html
+
+■制作者
+　KeitaIsobe　しゅんや　サトウ　山華　Otanyo
+
