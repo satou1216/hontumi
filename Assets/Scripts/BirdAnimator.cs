@@ -27,19 +27,23 @@ public class BirdAnimator : MonoBehaviour
         screenToWorldPointPosition = Camera.main.ScreenToWorldPoint(position);
         if (Input.GetMouseButtonDown(0))
         {
-            
+            //Debug.Log("3");
             var length = Vector3.Distance(transform.position,screenToWorldPointPosition);
             if (length < 0.5f)
             {
-                //Debug.Log("1");
-                if(attack == true && ModeManager.MainMode == false)
+                Debug.Log(attack);
+
+
+                if (attack == false && ModeManager.MainMode == false)
                 {
-                    
+                    Debug.Log("1");
+
                     animator.SetTrigger("hit");
                     Invoke("destroy", 1.5f);
                 }else
                 {
-                    //Debug.Log("0");
+                    Debug.Log("0");
+                    
                 }
                 
                 
@@ -67,6 +71,7 @@ public class BirdAnimator : MonoBehaviour
     void destroy()
     {
         Destroy(gameObject);
+        Debug.Log("3");
     }
 
     public void AttackModeOn() //UŒ‚ƒ‚[ƒh‚ðƒIƒ“‚É‚µ‚½‚Æ‚«‚É‚Â‚¯‚È‚«‚á‚¢‚¯‚È‚¢ˆ—

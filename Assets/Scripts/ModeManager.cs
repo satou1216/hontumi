@@ -39,6 +39,7 @@ public class ModeManager : MonoBehaviour
         if (MainMode)
         {
             CM.AttackModeOff();
+            //Debug.Log("a");
             //BA.AttackModeOff();
             button1.SetActive(true);
             button2.SetActive(false);
@@ -52,6 +53,6 @@ public class ModeManager : MonoBehaviour
             button1.SetActive(false);
 
         }
-        Debug.Log(MainMode);
+        //Debug.Log(MainMode);
     }
 }

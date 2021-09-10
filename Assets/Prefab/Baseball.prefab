@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1758374088319660961}
   - component: {fileID: -733582561820661204}
   - component: {fileID: 1744712906140215350}
+  - component: {fileID: 786041238155755923}
   m_Layer: 0
   m_Name: Baseball
   m_TagString: Untagged
@@ -163,3 +164,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &786041238155755923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266211447596608000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 155f23c28f7bf9d4a8040580ba4500bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

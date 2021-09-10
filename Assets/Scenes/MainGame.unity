@@ -413,9 +413,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 10
+  While: 15
   randamMin: 10
-  randamMax: 100
+  randamMax: 300
   x: 8
   target: {fileID: 1808816292890910256, guid: 6d18504996f781b43b639d21fb50f300, type: 3}
 --- !u!4 &579108465
@@ -1858,9 +1858,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 10
+  While: 15
   randamMin: 10
-  randamMax: 100
+  randamMax: 300
   x: -8
   target: {fileID: 7377221050921555272, guid: 4e53a3fc769754c4ba6045450ab46bd1, type: 3}
 --- !u!4 &1299194078
@@ -2217,9 +2217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 10
+  While: 15
   randamMin: 10
-  randamMax: 100
+  randamMax: 300
   x: 8
   target: {fileID: 460123582958086100, guid: 337dc286f6508134bb53c8dce5f90e40, type: 3}
 --- !u!4 &1496181126
@@ -2265,9 +2265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 10
+  While: 15
   randamMin: 10
-  randamMax: 100
+  randamMax: 300
   x: -8
   target: {fileID: 266211447596608000, guid: 1dc94980bb5316f49a39b3f090bb994d, type: 3}
 --- !u!4 &1513134188
