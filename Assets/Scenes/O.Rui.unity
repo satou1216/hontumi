@@ -452,8 +452,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.8769, y: -38.715}
-  m_SizeDelta: {x: 167.7538, y: 177.43}
+  m_AnchoredPosition: {x: -2.2279, y: 5.0482025}
+  m_SizeDelta: {x: 389.1436, y: 362.7795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1826091697
 MonoBehaviour:
@@ -482,13 +482,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u3000\u3000\u3000\u3000\u30AF\u30EC\u30B8\u30C3\u30C8\n"
+  m_Text: "\u30AF\u30EC\u30B8\u30C3\u30C8\n\n\u52B9\u679C\u97F3\n\u30CB\u30B3\u30CB\u30FB\u30B3\u30E2\u30F3\u30BA\u69D8\n\nDOVA-SYNDROME\u69D8\n\n\u3000\u7121\u6599\u52B9\u679C\u97F3\u3067\u904A\u307C\u3046\uFF01\u69D8\nhttps://taira-komori.jpn.org/daily01.html\n\n\nBGM\nDOVA-SYNDROME\u69D8\nhttps://dova-s.jp/bgm/play10441.html"
 --- !u!222 &1826091698
 CanvasRenderer:
   m_ObjectHideFlags: 0
