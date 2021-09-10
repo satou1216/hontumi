@@ -488,7 +488,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30AF\u30EC\u30B8\u30C3\u30C8\n\n\u80CC\u666F\npixiv\u69D8\n\u3000\u3000https://www.pixiv.net/artworks/17879821\nBEIZ\u3000images\nhttps://www.beiz.jp/%E7%B4%A0%E6%9D%90/%E9%9D%92%E7%A9%BA/\n\n\u52B9\u679C\u97F3\n\u30CB\u30B3\u30CB\u30FB\u30B3\u30E2\u30F3\u30BA\u69D8\n\nDOVA-SYNDROME\u69D8\n\n\u3000\u7121\u6599\u52B9\u679C\u97F3\u3067\u904A\u307C\u3046\uFF01\u69D8\nhttps://taira-komori.jpn.org/daily01.html\n\n\nBGM\nDOVA-SYNDROME\u69D8\nhttps://dova-s.jp/bgm/play10441.html"
+  m_Text: "\u30AF\u30EC\u30B8\u30C3\u30C8\n\n\u52B9\u679C\u97F3\n\u30CB\u30B3\u30CB\u30FB\u30B3\u30E2\u30F3\u30BA\u69D8\n\nDOVA-SYNDROME\u69D8\n\n\u3000\u7121\u6599\u52B9\u679C\u97F3\u3067\u904A\u307C\u3046\uFF01\u69D8\nhttps://taira-komori.jpn.org/daily01.html\n\n\nBGM\nDOVA-SYNDROME\u69D8\nhttps://dova-s.jp/bgm/play10441.html"
 --- !u!222 &1826091698
 CanvasRenderer:
   m_ObjectHideFlags: 0
