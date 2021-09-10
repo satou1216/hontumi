@@ -12,6 +12,7 @@ public class Appe : MonoBehaviour
     float x, y;
     Vector3 mousevec,vec;
 
+    public int xx;
 
     void Start()
     {
@@ -37,12 +38,14 @@ public class Appe : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Destroy(sha);
-            //mousevec.z = 10.0f;
-            Instantiate(book, new Vector3(vec.x+x, Detection.bestY + 3, 10f), Quaternion.identity);
+            if (xx<vec.x) {
+                Destroy(sha);
+                //mousevec.z = 10.0f;
+                Instantiate(book, new Vector3(vec.x + x, Detection.bestY + 3, 10f), Quaternion.identity);
 
-            set = false;
-            sha = Instantiate(shadow, new Vector3(vec.x+x, Detection.bestY + 3, 10f), Quaternion.identity);
+                set = false;
+                sha = Instantiate(shadow, new Vector3(vec.x + x, Detection.bestY + 3, 10f), Quaternion.identity);
+            }
         }
     }
 
