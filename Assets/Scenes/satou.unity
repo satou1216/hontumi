@@ -743,8 +743,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   y: 0.5
-  g: {fileID: 245601436651083908, guid: 4be70f4a4b1342748bb1f0e62751e6f1, type: 3}
   t: {fileID: 1995732181}
+  fall: {fileID: 546360238}
+  Y: 0
 --- !u!61 &1588993479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -867,6 +868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 245601436651083908, guid: 4be70f4a4b1342748bb1f0e62751e6f1, type: 3}
   shadow: {fileID: 245601436651083908, guid: f0e1fdcecf367a249ac6746967c8ebf3, type: 3}
+  came: {fileID: 0}
+  xx: -2
 --- !u!4 &1593019057
 Transform:
   m_ObjectHideFlags: 0
