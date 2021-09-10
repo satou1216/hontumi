@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyDisplay : MonoBehaviour
 {
+    public float While;
     public float randamMin;
     public float randamMax;
     public float x;
@@ -17,7 +18,7 @@ public class EnemyDisplay : MonoBehaviour
     {
         seconds += Time.deltaTime;
         //\•b‚²‚Æ‚É“G¶¬
-        if (seconds >= 20)
+        if (seconds >= While)
         { 
             if (target != null)
             {

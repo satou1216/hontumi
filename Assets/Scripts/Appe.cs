@@ -36,9 +36,9 @@ public class Appe : MonoBehaviour
 
         sha.transform.position = new Vector3(vec.x+x,Detection.bestY+3 , 10f); ;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) )
         {
-            if (xx<vec.x) {
+            if (xx<vec.x&&ModeManager.MainMode == true) {
                 Destroy(sha);
                 //mousevec.z = 10.0f;
                 Instantiate(book, new Vector3(vec.x + x, Detection.bestY + 3, 10f), Quaternion.identity);
