@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BirdAnimator : MonoBehaviour
 {
+    SoundManager audio2;
+
     Animator animator;
     Vector3 position;
     Vector3 screenToWorldPointPosition;
@@ -13,7 +15,7 @@ public class BirdAnimator : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        
+        audio2 = GameObject.Find("Main Camera").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class BirdAnimator : MonoBehaviour
                     Debug.Log("1");
 
                     animator.SetTrigger("hit");
+                    audio2.sePlay("birdHit");
                     Invoke("destroy", 1.5f);
                 }else
                 {
