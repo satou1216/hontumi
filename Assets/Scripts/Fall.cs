@@ -22,10 +22,11 @@ public class Fall : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if (collision.gameObject.tag == "book")
+        if (collision.gameObject.tag == "book"|| collision.gameObject.tag == "Untagged")
         {
             //‰¹
             g.SetActive(true);
+            Cursor.visible = true;
             Time.timeScale = 0;
 
         }
@@ -36,6 +37,7 @@ public class Fall : MonoBehaviour
     {
         Detection.bestY = 0;
         SceneManager.LoadScene("Title");
+        Time.timeScale = 1;
     }
 
     public void game()
@@ -43,6 +45,13 @@ public class Fall : MonoBehaviour
         Detection.bestY = 0;
         SceneManager.LoadScene("MainGame");
         Time.timeScale = 1;
+    }
+
+    public void end()
+    {
+        g.SetActive(true);
+        Cursor.visible = true;
+        Time.timeScale = 0;
     }
 
 }
