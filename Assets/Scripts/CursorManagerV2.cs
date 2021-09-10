@@ -7,12 +7,14 @@ public class CursorManagerV2 : MonoBehaviour
     Animator bird;
     
     Animator animator;
+
+    SoundManager SM;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
         animator = GetComponent<Animator>();
-        
+        SM = GameObject.Find("Main Camera").GetComponent<SoundManager>();
         
     }
 
@@ -22,6 +24,10 @@ public class CursorManagerV2 : MonoBehaviour
         
         
         gameObject.transform.position = Input.mousePosition;
+        if (Input.GetMouseButtonDown(0))
+        {
+            SM.sePlay("button1");
+        }
         if (Input.GetMouseButton(0))
         {
             animator.SetBool("click", true);
