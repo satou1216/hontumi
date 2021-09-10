@@ -9,7 +9,7 @@ public class ClickSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SM = GameObject.Find("Main Camera").GetComponent<SoundManager>();
+        SM = GameObject.Find("MainCamera").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame

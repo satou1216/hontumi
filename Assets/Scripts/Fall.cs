@@ -14,11 +14,13 @@ public class Fall : MonoBehaviour
 
     DeadLine d;
 
+    private SoundManager SM;
+
     // Start is called before the first frame update
     void Start()
     {
         d = GameObject.Find("Deadline").GetComponent<DeadLine>();
-        
+        SM = GameObject.Find("MainCamer").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -62,6 +64,7 @@ public class Fall : MonoBehaviour
         g.SetActive(true);
 
         ima.text=d.Y.ToString("f2");
+        SM.sePlay("resultSE");
 
         if (PlayerPrefs.GetFloat("SCORE", 0) < d.Y)
         {

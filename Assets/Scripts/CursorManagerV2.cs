@@ -14,7 +14,7 @@ public class CursorManagerV2 : MonoBehaviour
     {
         Cursor.visible = false;
         animator = GetComponent<Animator>();
-        SM = GameObject.Find("Main Camera").GetComponent<SoundManager>();
+        SM = GameObject.Find("MainCamer").GetComponent<SoundManager>();
         
     }
 
@@ -26,6 +26,7 @@ public class CursorManagerV2 : MonoBehaviour
         gameObject.transform.position = Input.mousePosition;
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("oto!!!");
             SM.sePlay("button1");
         }
         if (Input.GetMouseButton(0))

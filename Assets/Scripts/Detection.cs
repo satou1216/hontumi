@@ -14,11 +14,14 @@ public class Detection : MonoBehaviour
 
     DeadLine dead;
 
+    SoundManager SM;
+
     // Start is called before the first frame update
     void Start()
     {
         height = gameObject.GetComponent<SpriteRenderer>().bounds.size.y;
         dead = GameObject.Find("Deadline").GetComponent<DeadLine>();
+        SM = GameObject.Find("MainCamer").GetComponent<SoundManager>();
         //bookList.Add(dodai);
         //dead = GameObject.Find("Deadline").GetComponent<DeadLine>();
     }
@@ -41,6 +44,7 @@ public class Detection : MonoBehaviour
          */
         if (collision.gameObject.tag != "Untagged")
         {
+            SM.sePlay("putting_a_book2");
             //dead.addconp(bookList[bookList.Count-1]);
             bookList.Add(collision.gameObject);
             bestY = bookList[bookList.Count-1].gameObject.transform.position.y + height;

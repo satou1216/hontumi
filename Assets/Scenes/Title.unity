@@ -557,6 +557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   g: {fileID: 667952010}
+  t: {fileID: 0}
+  ima: {fileID: 0}
 --- !u!1 &1111573806
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0865ca7c9425f1c4b8879d8b5ab9aa78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a9879f7cc8b64543a1642a4a34225d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
