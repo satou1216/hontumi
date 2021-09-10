@@ -3504,7 +3504,7 @@ GameObject:
   - component: {fileID: 2012251941}
   - component: {fileID: 2012251940}
   m_Layer: 0
-  m_Name: "\u68EE\u30B9\u30C6\u30FC\u30B8\u3000\u8DB3\u5834"
+  m_Name: stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
