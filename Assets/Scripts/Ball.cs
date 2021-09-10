@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Ball: MonoBehaviour
 {
-    
+    SoundManager audio1;
+
     Vector3 position;
     Vector3 screenToWorldPointPosition;
     Animator cursor;
@@ -12,7 +13,7 @@ public class Ball: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio1 =GameObject.Find("Main Camera"). GetComponent<SoundManager>();
 
     }
 
@@ -38,7 +39,7 @@ public class Ball: MonoBehaviour
                 {
                     Debug.Log("1");
 
-
+                    audio1.sePlay("birdHit");
                     Destroy(gameObject);
                 }
                 else
