@@ -32,8 +32,9 @@ public class BirdAnimator : MonoBehaviour
             if (length < 0.5f)
             {
                 //Debug.Log("1");
-                if(attack == true)
+                if(attack == true && ModeManager.MainMode == false)
                 {
+                    
                     animator.SetTrigger("hit");
                     Invoke("destroy", 1.5f);
                 }else
