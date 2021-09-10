@@ -13,7 +13,7 @@ public class Ball: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audio1 =GameObject.Find("Main Camera"). GetComponent<SoundManager>();
+        audio1 =GameObject.Find("MainCamer"). GetComponent<SoundManager>();
 
     }
 

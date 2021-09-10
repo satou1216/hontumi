@@ -15,7 +15,7 @@ public class BirdAnimator : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        audio2 = GameObject.Find("Main Camera").GetComponent<SoundManager>();
+        audio2 = GameObject.Find("MainCamer").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
