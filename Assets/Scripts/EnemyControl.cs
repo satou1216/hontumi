@@ -8,14 +8,14 @@ public class EnemyControl : MonoBehaviour
     bool vertical;
     //public float changeTime = 3.0f;
 
-    new Rigidbody2D rigidbody2D;
+    Rigidbody2D rig2D;
     public int direction = 1;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rig2D = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -25,14 +25,14 @@ public class EnemyControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 position = rigidbody2D.position;
+        Vector2 position = rig2D.position;
 
         if (!vertical)
         { 
             //â°à⁄ìÆ
             position.x = position.x + Time.deltaTime * speed * direction; 
         }
-        rigidbody2D.MovePosition(position);
+        rig2D.MovePosition(position);
 
     }
     //ìGÇÃâÊñ äOè¡ãé

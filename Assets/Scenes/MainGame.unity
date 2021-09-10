@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 15
+  While: 10
   randamMin: 10
   randamMax: 300
   x: 8
@@ -1032,6 +1032,7 @@ GameObject:
   - component: {fileID: 804001531}
   - component: {fileID: 804001530}
   - component: {fileID: 804001529}
+  - component: {fileID: 804001532}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -1146,6 +1147,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804001527}
   m_CullTransparentMesh: 1
+--- !u!114 &804001532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804001527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90745c5a896a37244ac38484acab2c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &840650891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,7 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f7baac8097b3cc4d83e356a1cc59bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  y: 0.1
+  y: 0.5
   t: {fileID: 320673984}
   fall: {fileID: 966721834}
   Y: 0
@@ -1905,7 +1918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 15
+  While: 10
   randamMin: 10
   randamMax: 300
   x: -8
@@ -2198,7 +2211,7 @@ RectTransform:
   m_Children:
   - {fileID: 1826154751}
   m_Father: {fileID: 1850850994}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2264,7 +2277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 15
+  While: 10
   randamMin: 10
   randamMax: 300
   x: 8
@@ -2421,7 +2434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee7c894b512924a859cd245147768e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  While: 15
+  While: 10
   randamMin: 10
   randamMax: 300
   x: -8
@@ -2926,9 +2939,9 @@ RectTransform:
   - {fileID: 487549225}
   - {fileID: 804001528}
   - {fileID: 320673983}
-  - {fileID: 1882154071}
   - {fileID: 1413133572}
   - {fileID: 1888771784}
+  - {fileID: 1882154071}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2974,7 +2987,7 @@ Transform:
   - {fileID: 624931942}
   - {fileID: 1688596323}
   m_Father: {fileID: 1850850994}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888771783
 GameObject:
@@ -3009,7 +3022,7 @@ RectTransform:
   m_Children:
   - {fileID: 749424506}
   m_Father: {fileID: 1850850994}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

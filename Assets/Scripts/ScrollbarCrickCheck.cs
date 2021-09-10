@@ -7,8 +7,7 @@ public class ScrollbarCrickCheck : MonoBehaviour
     Vector3 position;
     Vector3 screenToWorldPointPosition;
 
-    [SerializeField]
-    bool clicktoscrollbar;
+    bool clicktoscrollbar = false;
     // Start is called before the first frame update
     void Start()
     {
